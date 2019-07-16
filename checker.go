@@ -48,12 +48,12 @@ func main() {
 		return
 	}  
 
-	crawler(file, *Domain, *User, *Pass, *Port)
+	crawler(file, *Domain, *User, *Pass, *Port, *Auth_url, *Login_form, *Pass_form)
 }
 
 //Function create Colly Collector with authorized session
 
-func crawler(file *os.File, Domain string, User string, Pass string, Port string) {
+func crawler(file *os.File, Domain string, User string, Pass string, Port string, Auth_url string, Login_form string, Pass_form string) {
 
 	str := &CollyData{}
 
