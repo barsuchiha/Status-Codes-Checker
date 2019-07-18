@@ -40,7 +40,7 @@ func main() {
 	defer file.Close()
 
 	flag.Parse()
-	if *Domain == "" || *User == "" || *Pass == "" "" *Auth_url == "" || *Login_form == "" || *Pass_form == ""  {
+	if *Domain == "" || *User == "" || *Pass == "" *Auth_url == "" || *Login_form == "" || *Pass_form == ""  {
 		fmt.Println("\x1b[91m","\x1b[1m")
 		fmt.Println("Error")
 		fmt.Println("\x1b[39m","\x1b[21m")
